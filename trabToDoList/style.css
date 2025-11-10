@@ -1,0 +1,36 @@
+:root{
+  --card-bg: #ffffff;
+  --muted: #6c757d;
+}
+
+body{
+  background: linear-gradient(180deg,#f8fafc 0%, #ffffff 100%);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+header h1, header p { text-shadow: 0 1px 0 rgba(0,0,0,0.04); }
+
+.card { border-radius: 8px; }
+#taskList .task-card { transition: transform .12s ease, box-shadow .12s ease; }
+#taskList .task-card:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(15,15,20,.06); }
+
+.priority-badge {
+  font-size: .75rem;
+  padding: .3rem .45rem;
+  border-radius: .375rem;
+  color: #fff;
+}
+.p-Baixa { background:#6c757d; }
+.p-Média { background:#0d6efd; }
+.p-Alta { background:#fd7e14; }
+.p-Crítica { background:#dc3545; }
+
+.label-muted { font-size:.85rem; color:var(--muted); }
+
+.small-note { font-size:.85rem; color:#444; }
+
+@media (max-width: 767px){
+  main .row { flex-direction: column; }
+}
