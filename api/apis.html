@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trabalho JS - Chamadas a 3 APIs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">APIs Integradas</h1>
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="index.html" class="nav-link">Enviar dados</a>
+        <a href="apis.html" class="nav-link">APIs (3 chamadas)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content" id="main-apis">
+    <section class="card">
+      <h2>Resumo das 3 APIs</h2>
+      <p>Esta página faz chamadas automáticas a três APIs diferentes.</p>
+    </section>
+
+    <section class="card api-block" id="swapi">
+      <h3>SWAPI (Star Wars)</h3>
+      <p class="explain">Buscamos um personagem (Luke Skywalker) na API do Star Wars e mostramos alguns dados.</p>
+      <div class="api-content" id="swapiContent">Carregando...</div>
+      <div class="api-error" id="swapiError"></div>
+    </section>
+
+    <section class="card api-block" id="brasilapi">
+      <h3>BrasilAPI (Feriados 2025)</h3>
+      <p class="explain">Lista de alguns feriados nacionais de 2025 usando a BrasilAPI.</p>
+      <div class="api-content" id="brasilContent">Carregando...</div>
+      <div class="api-error" id="brasilError"></div>
+    </section>
+
+    <section class="card api-block" id="fipe">
+      <h3>Fipe (Marcas de carros)</h3>
+      <p class="explain">Buscamos as marcas de carros (API FIPE) através de um endpoint, que devolve um array.</p>
+      <div class="api-content" id="fipeContent">Carregando...</div>
+      <div class="api-error" id="fipeError"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Trabalho de APIs - Théo Braga Gibbon</p>
+    </div>
+  </footer>
+
+  <script src="apis.js" defer></script>
+</body>
+</html>

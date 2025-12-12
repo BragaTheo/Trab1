@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trabalho JS - Enviar dados (Agify)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">APIs Integradas</h1>
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="index.html" class="nav-link">Enviar dados</a>
+        <a href="apis.html" class="nav-link">APIs (3 chamadas)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content" id="main">
+    <section class="card">
+      <h2>Prever idade pelo nome (Agify)</h2>
+      <p>Digite seu nome abaixo. O site enviará o nome para a API e mostrará a previsão de sua idade.</p>
+
+      <form id="nameForm" class="form">
+        <label for="nameInput">Nome</label>
+        <input id="nameInput" name="name" type="text" placeholder="Ex: Maria" required minlength="2" />
+        <div class="form-actions">
+          <button type="submit" id="submitBtn">Prever idade</button>
+          <button type="button" id="clearBtn" class="secondary">Limpar</button>
+        </div>
+      </form>
+
+      <div id="result" class="result" aria-live="polite"></div>
+      <div id="error" class="error" role="alert" aria-live="assertive"></div>
+    </section>
+
+    <section class="card info">
+      <h3>Como funciona</h3>
+      <p>Ao enviar o nome, é feito uma chamada para Agify. A resposta contém a idade estimada e a contagem de registros usados pela API.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Trabalho de APIs - Théo Braga Gibbon</p>
+    </div>
+  </footer>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
